@@ -135,7 +135,7 @@ p{
 }
 .graph{
     position: absolute;
-    top: 288%;
+    top: 270%;
     color: var(--dark-desaturated-cyan);
 }
 #text{
@@ -143,7 +143,7 @@ p{
 }
 .photo{
     position: absolute;
-    top: 370%;
+    top: 337%;
     color: var(--dark-blue);
 }
 .testimonials{
@@ -196,7 +196,7 @@ footer{
     margin:3rem;
 }
 .media-links > img{
-    width: 15%;
+    width: 20%;
     padding-right: 25px;
 }
 .bottom-nav{
@@ -206,5 +206,21 @@ footer{
 }
 .bottom-nav > a{
     color:var(--dark-desaturated-cyan);
-    padding-right: 35px;
+    padding-right: 15px;
+}
+@media (min-width: 375px){
+    .graph{
+        top: 288%;
+    }
+    .photo{
+        top: 370%;
+    }
+}
+@media (min-width: 425px){
+    .graph{
+        top: 300%;
+    }
+    .photo{
+        top: 390%;
+    }
 }
