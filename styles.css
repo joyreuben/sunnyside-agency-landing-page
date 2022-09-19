@@ -208,9 +208,9 @@ footer{
     color:var(--dark-desaturated-cyan);
     padding-right: 15px;
 }
-@media (min-width: 375px){
+@media (min-width: 360px){
     .graph{
-        top: 288%;
+        top: 280%;
     }
     .photo{
         top: 370%;
