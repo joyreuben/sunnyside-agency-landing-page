@@ -27,6 +27,13 @@ body{
 img{
     display:block;
 }
+p{
+    font-size: 18px;
+    padding-top: 18px;  
+}
+#text2{
+    color: var(--Grayish-blue);
+}
 a{
     text-decoration: none;
 }
@@ -51,18 +58,54 @@ header{
     justify-content: space-between;
     align-items: space-between;
 }
+
 h2{
     font-size: 3rem;
     margin-top: 3rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
 h3{
     font-size: 2rem;
     font-family: 'Fraunces', serif;
 }
-.side-nav{
-    display:none;
+.side-nav2{
+    display: none;
 }
+.side-nav{
+    display: none;
+    flex-direction: column;
+    border-radius: 0 0 -10px;
+    width: 90%;
+    position: absolute;
+    background-color: var(--White);
+    top: 80px;
+    z-index: 2;
+    padding: 1rem;
+    font-size: 1.4rem;
+    transition: all ease-in-out 5s;
+}
+.side-nav > a{
+    margin: 1rem;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: var(--Grayish-blue);
+    font-size: 1.4rem;
+}
+button{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+    border: none;
+    margin: 1.5rem; 
+    margin-left: 4.7rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase; 
+    font-size: 1rem;
+}
+
 .image-transform-desktop,
 .image-stand-out-desktop,
 .image-graphic-design-desktop,
@@ -98,10 +141,6 @@ h3{
     color: var(--Very-dark-desaturated-blue);
     padding: 2rem 12px 2rem 12px;
 }
-p{
-    font-size: 18px;
-    padding-top: 18px;
-}
 #learn,
 #learn2{
     font-family: 'Fraunces', serif;
@@ -113,6 +152,10 @@ p{
     align-self: flex-start;
     padding: 5px 1.5rem;
     padding-top: 18px;
+}
+#learn,
+#learn2:hover{
+    cursor: pointer;
 }
 #learn::after,
 #learn2::after{
@@ -207,18 +250,25 @@ footer{
     color:var(--dark-desaturated-cyan);
     padding-right: 15px;
 }
+.bottom-nav > a:hover{
+    color:var(--White);
+    cursor: pointer;
+}
+.show{
+    display:flex;
+}
 .graph{
     top: 337%;
 }
 .photo{
     top: 425%;
 }
-@media (min-width: 360px){
+@media (min-width: 320px){
     .graph{
-        top: 360%;
+        top: 320%;
     }
     .photo{
-        top: 470%;
+        top: 410%;
     }
 }
 @media (min-width: 425px){
@@ -238,6 +288,10 @@ footer{
     }
 }
 @media (min-width: 700px){
+    h2{
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
     header{
         background-image: url('images/desktop/image-header.jpg');
     }
@@ -251,13 +305,16 @@ footer{
         display: none;
     }
     .side-nav{
+        display: none;
+    }
+    .side-nav2{
         display: flex;
     }
-    .side-nav > a{
+    .side-nav2 > a{
         margin: 10px;
         color: var(--White);
     }
-    button{
+    .button2{
         width: 120px;
         height: 50px;
         border-radius: 20px;
@@ -265,6 +322,13 @@ footer{
         font-family: 'Fraunces', serif;
         margin-left: 1rem;
         text-transform: uppercase;
+        background-color: white;
+        margin-top: -5px;
+    }
+    button:hover{
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
     }
     .top-logo{
         width: 15%;
@@ -323,7 +387,7 @@ footer{
         right: 0;
     }
     #text{
-        padding: 1rem;
+        padding: 2rem;
     }
     .testimonials{
         margin-top: 150px;
@@ -348,7 +412,7 @@ footer{
         flex-direction: row;
     }
     .media-links > img{
-        width: 7%;
+        width: 4%;
         padding-right: 25px;
     }
     #testimonial-text{
@@ -364,22 +428,32 @@ footer{
 }
 @media (min-width: 1024px){
     header{
-        height: 100%;
+        height: 80%;
     }
+    #text{
+        padding: 2rem 4rem;
+    }
+    .top-logo{
+        width: 20%;
+    }
+
     .arrow{
         top: 16rem;
     }
     h2{
         margin-top: 4rem;
     }
+    h3{
+        font-size: 2.5rem;
+    }
     .transform{
         margin: 5rem;
     }
     .graph{
-        top: 280%;
+        top: 310%;
     }
     .photo{
-        top: 280%;
+        top: 310%;
     }
     .testimonials{
         margin-top: 250px;
@@ -408,7 +482,6 @@ footer{
     .image-graphic-design-desktop{
         display: block;
         width: 100%;
-        height: 120%;
+        height: 60%;
     }
-
 }
