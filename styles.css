@@ -61,7 +61,6 @@ h3{
     font-family: 'Fraunces', serif;
 }
 .side-nav{
-    width: 85%;
     display:none;
 }
 .image-transform-desktop,
@@ -208,19 +207,208 @@ footer{
     color:var(--dark-desaturated-cyan);
     padding-right: 15px;
 }
+.graph{
+    top: 337%;
+}
+.photo{
+    top: 425%;
+}
 @media (min-width: 360px){
     .graph{
-        top: 280%;
+        top: 360%;
     }
     .photo{
-        top: 370%;
+        top: 470%;
     }
 }
 @media (min-width: 425px){
     .graph{
-        top: 300%;
+        top: 380%;
     }
     .photo{
-        top: 390%;
+        top: 500%;
     }
+}
+@media (min-width: 500px){
+    .graph{
+        top: 420%;
+    }
+    .photo{
+        top: 560%;
+    }
+}
+@media (min-width: 700px){
+    header{
+        background-image: url('images/desktop/image-header.jpg');
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+        margin: 1rem;
+    }
+    .hambuger{
+        display: none;
+    }
+    .side-nav{
+        display: flex;
+    }
+    .side-nav > a{
+        margin: 10px;
+        color: var(--White);
+    }
+    button{
+        width: 120px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        font-family: 'Fraunces', serif;
+        margin-left: 1rem;
+        text-transform: uppercase;
+    }
+    .top-logo{
+        width: 15%;
+    }
+    .image-transform-desktop,
+    .image-stand-out-desktop
+    {
+       display:block;
+       width:50%;
+    }
+    .image-transform-mobile,
+    .image-stand-out-mobile,
+    .image-photography-mobile,
+    .image-graphic-design-mobile,
+    .image-milkbottles-mobile,
+    .image-orange-mobile,
+    .image-cone-mobile,
+    .image-sugarcube-mobile{
+        display: none;
+    }
+    .image-milkbottles-desktop,
+    .image-orange-desktop,
+    .image-cone-desktop,
+    .image-sugarcube-desktop{
+        width:50%;
+    }
+    .transform{
+        width: 50%;
+        margin: 1.2rem;
+        text-align: left;
+    }
+    .first-section{
+        flex-direction: row;
+    }
+    .second-section{
+        flex-direction: row-reverse;
+    }
+    .third-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .image-photography-desktop,
+    .image-graphic-design-desktop{
+        display: block;
+        width: 100%;
+        height: 140%;
+    }
+    .graph{
+        width: 50%;
+        top: 240%;
+        left: 0;
+    }
+    .photo{
+        width: 50%;
+        top: 240%;
+        right: 0;
+    }
+    #text{
+        padding: 1rem;
+    }
+    .testimonials{
+        margin-top: 150px;
+    }
+    .testimonial-section{
+        display: flex;
+    }
+    .emily,
+    .thomas,
+    .jennie{
+        width:32%;
+    }
+    .image-milkbottles-desktop,
+    .image-orange-desktop,
+    .image-cone-desktop,
+    .image-sugarcube-desktop{
+        display: block;
+        width: 50%;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+    }
+    .media-links > img{
+        width: 7%;
+        padding-right: 25px;
+    }
+    #testimonial-text{
+        margin: 2rem;
+        font-size: 15px;
+    }
+    #name{
+        font-size: 16px;
+    }
+    #role{
+        font-size: 15px;
+    }
+}
+@media (min-width: 1024px){
+    header{
+        height: 100%;
+    }
+    .arrow{
+        top: 16rem;
+    }
+    h2{
+        margin-top: 4rem;
+    }
+    .transform{
+        margin: 5rem;
+    }
+    .graph{
+        top: 280%;
+    }
+    .photo{
+        top: 280%;
+    }
+    .testimonials{
+        margin-top: 250px;
+    }
+    .testimonial-section{
+        margin: 2rem;
+    }
+}
+@media (min-width: 1440px){
+    .transform{
+        margin: 11rem;
+    }
+    .graph{
+        top: 280%;
+    }
+    .photo{
+        top: 280%;
+    }
+    .testimonials{
+        margin-top: 280px;
+    }
+    .testimonial-section{
+        margin: 3rem;
+    }
+    .image-photography-desktop,
+    .image-graphic-design-desktop{
+        display: block;
+        width: 100%;
+        height: 120%;
+    }
+
 }
